@@ -40,7 +40,7 @@ namespace DangerousSausages
             {
                 SQLiteConnection.CreateFile(@"C:\Users\kaut1\Desktop\TestDB.db");
             }
-            using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=C:\Users\kaut1\Desktop\TestDB.db; Version=3;")) // в строке указывается к какой базе подключаемся
+            using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=C:\Users\kaut1\Desktop\jn(1)\TestDB.db; Version=3;")) // в строке указывается к какой базе подключаемся
             {
                 // строка запроса, который надо будет выполнить
                 string commandText = "CREATE TABLE IF NOT EXISTS [dbTableName] ( [id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, [name] NVARCHAR(128), [position] NVARCHAR(128), " +
@@ -84,24 +84,13 @@ private void EnterToken(object sender, EventArgs e)
             
             Telegram.Bot.Types.Message msg = messageEventArgs.Message;
             if (msg == null || msg.Type != MessageType.Text) return;
-            using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=C:\Users\kaut1\Desktop\TestDB.db; Version=3;"))
-            {
-                string commandText = "SELECT * FROM [dbTableName] WHERE [name] NOT NULL";
-                SQLiteCommand Command = new SQLiteCommand(commandText, Connect);
-                Connect.Open(); // открыть соединение
-                SQLiteDataReader sqlReader = Command.ExecuteReader();
-                while (sqlReader.Read()) // считываем и вносим в лист все параметры
-                {
-                    string name = sqlReader["name"].ToString();
-
-                }
-                Connect.Close(); // закрыть соединение
-            }
+                
+            
 
                 switch (msg.Text)
             {
                 case "/tasks":
-                    Answer = "Введите имя и фамилию";
+                    Answer = "Введите имя и фамилию"; 
                     break;
                 case "/salary": Answer = "У вас зарплата маленькая, но хорошая. В принципе, ее хватает, чтобы доехать до гипермаркета, погулять в нем и уехать обратно.";
                 break;
@@ -143,35 +132,33 @@ private void EnterToken(object sender, EventArgs e)
                     Answer = "напишите команду заново";
                     await BOT.SendTextMessageAsync(msg.Chat.Id, "Для повторного вызова панели", replyMarkup: new ReplyKeyboardRemove());
                     break;
-                case "Андрей Шлюпкин":
-                    Answer = "Специализация: Project Manager\nЗарплата: 30000руб\n Задания:\n 1.Подготовить презентацию по проекту\n 2.Организация проектирования";
-                    break;
-
-                case "Антон Прокудин":
-                    using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=C:\Users\kaut1\Desktop\TestDB.db; Version=3;"))
+                default:
+                    using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=C:\Users\kaut1\Desktop\jn(1)\TestDB.db; Version=3;"))
                     {
-                        string commandText = "SELECT * FROM [dbTableName] WHERE [name]='Антон Прокудин'";
+                        string commandText = "SELECT * FROM [dbTableName] WHERE [name] NOT NULL";
                         SQLiteCommand Command = new SQLiteCommand(commandText, Connect);
                         Connect.Open(); // открыть соединение
                         SQLiteDataReader sqlReader = Command.ExecuteReader();
-                        string task = " ";
                         while (sqlReader.Read()) // считываем и вносим в лист все параметры
                         {
-                            task =sqlReader["task"].ToString();
-                            Answer = task;
+                            object all_task = " ";
+                            object position = " ";
+                            object name = sqlReader["name"];
+                            if (msg.Text == name.ToString())
+                            {
+                                all_task = sqlReader["task"];
+                                position = sqlReader["position"];
+                                Answer = "Специализация:\n" + position.ToString() + "\nЗадания на месяц:\n" + all_task.ToString();
+                                await BOT.SendTextMessageAsync(msg.Chat.Id, Answer);
+                            }
+                            if (msg.Text != name.ToString() ) {
+                                Answer = "Перейдите в /start";
+                            }
                         }
                         Connect.Close(); // закрыть соединение
+
                     }
                     break;
-
-                case "Дмитрий Заика":
-                    Answer = "Специализация: Программист Back-end\nЗарплата: 25000руб\n Задания:\n 1.Запись элементов из БД в файл\n 2.Вывод заданий и зарплаты";
-                    break;
-                case "Алексей Мацало":
-                    Answer = "Специализация: Тестировщик\nЗарплата: 25000руб\n Задания:\n 1.Тестирование чата";
-                    break;
-
-                default: Answer = "Такой команды не существует"; break;
             }
             await BOT.SendTextMessageAsync(msg.Chat.Id, Answer);
             if (msg.Text == "/info")
@@ -203,9 +190,8 @@ private void EnterToken(object sender, EventArgs e)
                 };
                 await BOT.SendTextMessageAsync(msg.Chat.Id, "О чём хотите узнать?", replyMarkup: keyboard);
             }
-            if (msg.Text == "/reg") { 
-                
-            }
+            // Поиск имени в БД
+            
 
             if (msg.Text == "/career_growth")
             {
@@ -236,7 +222,7 @@ private void EnterToken(object sender, EventArgs e)
         private void addButton_Click(object sender, RoutedEventArgs e)
         {
 
-            using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=C:\Users\kaut1\Desktop\TestDB.db; Version=3;"))
+            using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=C:\Users\kaut1\Desktop\jn(1)\TestDB.db; Version=3;"))
             {
                 string nameUser = NameTextBOX.Text;
                 string positionUser = positionTextBox.Text;

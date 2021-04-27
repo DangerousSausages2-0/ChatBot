@@ -62,3 +62,45 @@ C:\Users\kaut1\Desktop\jn (1)\DangerousSausages\bin\Debug\System.Threading.Tasks
 C:\Users\kaut1\Desktop\jn (1)\DangerousSausages\bin\Debug\System.ValueTuple.xml
 C:\Users\kaut1\Desktop\jn (1)\DangerousSausages\bin\Debug\System.Data.SQLite.dll
 C:\Users\kaut1\Desktop\jn (1)\DangerousSausages\bin\Debug\System.Data.SQLite.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\DangerousSausages.exe.config
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\DangerousSausages.exe
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\DangerousSausages.pdb
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Buffers.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Data.SQLite.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Memory.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Text.Json.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.ValueTuple.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\Telegram.Bot.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\Telegram.Bot.Extensions.Polling.dll
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Buffers.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Data.SQLite.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Memory.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Text.Json.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\System.ValueTuple.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\Telegram.Bot.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\bin\Debug\Telegram.Bot.Extensions.Polling.xml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages.csprojAssemblyReference.cache
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\MainWindow.g.cs
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\App.g.cs
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages_MarkupCompile.cache
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages_MarkupCompile.lref
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\MainWindow.baml
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages.g.resources
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages.Properties.Resources.resources
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages.csproj.GenerateResource.cache
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages.csproj.CoreCompileInputs.cache
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages.csproj.CopyComplete
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages.exe
+C:\Users\kaut1\Desktop\jn(1)\DangerousSausages\obj\Debug\DangerousSausages.pdb
